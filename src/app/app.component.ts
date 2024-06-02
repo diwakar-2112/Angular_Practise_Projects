@@ -10,4 +10,9 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'myapp';
+  constructor(){
+    setTimeout(() => {
+      this.title = "Changed title"
+    }, 2000);
+  }
 }
